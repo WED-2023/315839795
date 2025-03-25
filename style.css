@@ -19,6 +19,7 @@ body {
 	height: 50px;
 	background-color: rgba(0, 0, 0, 0.7);
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
 	z-index: 1000;
 	padding: 0 20px;
@@ -38,9 +39,8 @@ body {
   /* Menu links list */
   #menu ul {
 	display: flex;
-	flex: 1; 
 	gap: 16px;
-	justify-content: flex-end;
+	justify-content: flex-end; 
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -51,7 +51,7 @@ body {
   }
   
   #menu a {
-	text-decoration: none;  /* ✅ remove underline */
+	text-decoration: none;  
 	font-weight: bold;
 	color: #fff;
   }
