@@ -15,20 +15,28 @@ body {
   #menu {
 	position: fixed;
 	top: 0;
-	width: 100%;
+	left: 0;
+	right: 0;
 	height: 50px;
 	background-color: rgba(0, 0, 0, 0.7);
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: center; /* Center the entire menu content */
 	z-index: 1000;
 	padding: 0 20px;
 	box-shadow: 0 2px 5px rgba(255, 100, 0, 0.2);
   }
-
+  
+  #menu > div {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 1200px; /* Limit max-width to prevent stretching on wide screens */
+  }
+  
   #logo {
+	margin-right: auto; /* Push logo to the left */
 	flex-shrink: 0;
-	margin-right: 20px;
   }
   
   #logo img {
@@ -40,12 +48,11 @@ body {
   #menu ul {
 	display: flex;
 	gap: 16px;
-	justify-content: flex-end; 
 	list-style: none;
 	padding: 0;
 	margin: 0;
   }
-
+  
   #menu li {
 	list-style: none;
   }
@@ -54,6 +61,7 @@ body {
 	text-decoration: none;  
 	font-weight: bold;
 	color: #fff;
+	white-space: nowrap; /* Prevent wrapping of menu items */
   }
   
   #menu a:hover {
@@ -70,7 +78,6 @@ body {
 	border-bottom: 2px solid #ffaa00;
   }
   
-  
   /* Section headers */
   .section h2 {
 	border-bottom: 2px solid #ffaa00;
@@ -82,7 +89,6 @@ body {
 	color: #ffaa00;
 	font-weight: 600;
   }
-  
   
   /* General text */
   p {
@@ -138,4 +144,3 @@ body {
   form input[type="submit"]:hover {
 	background-color: #cc8800;
   }
-  
