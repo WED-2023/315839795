@@ -1,38 +1,56 @@
-/* Top navigation menu */
-#menu {
+/* General resets */
+body {
+	margin: 0;
+	padding-top: 60px; /* space for fixed menu */
+	font-family: 'Segoe UI', sans-serif;
+	background-color: #fff;
+  }
+  
+  /* Top navigation menu */
+  #menu {
 	position: fixed;
 	top: 0;
 	width: 100%;
 	height: 50px;
 	background-color: #a7dff4; /* light blue */
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	justify-content: center;
+	padding: 0 30px;
 	z-index: 1000;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
+  #logo {
+	font-weight: bold;
+	font-size: 20px;
+	color: #000;
+  }
+  
+  #menu ul {
+	display: flex;
+	gap: 20px;
+	padding: 0;
+	margin: 0;
+  }
+  
   #menu li {
-	display: inline;
-	margin: 0 15px;
-	list-style-type: none;
+	list-style: none;
   }
   
   #menu a {
 	text-decoration: none;
 	font-weight: bold;
 	color: #000;
-	font-family: Arial, sans-serif;
   }
   
   #menu a:hover {
 	color: #0077b6;
   }
   
-  /* General section style */
+  /* Page sections */
   .section {
-	padding: 100px 20px 60px 20px;
-	font-family: 'Segoe UI', sans-serif;
+	padding: 80px 20px 60px 20px;
 	max-width: 800px;
 	margin: auto;
 	border-bottom: 2px solid #00aaff;
@@ -47,8 +65,40 @@
 	color: #222;
   }
   
-  /* Form inputs */
-  form input, form textarea, form select {
+  /* Text styling */
+  p {
+	line-height: 1.6;
+	font-size: 17px;
+  }
+  
+  /* Image styling */
+  img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+  }
+  
+  /* Embedded video container */
+  .video-container {
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+	overflow: hidden;
+	max-width: 100%;
+  }
+  
+  .video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+  }
+  
+  /* Form styling */
+  form input,
+  form textarea,
+  form select {
 	width: 100%;
 	padding: 10px;
 	margin-top: 5px;
@@ -68,33 +118,5 @@
   
   form input[type="submit"]:hover {
 	background-color: #0077b6;
-  }
-  #menu {
-	display: flex;
-	justify-content: space-between;
-	padding: 0 30px;
-  }
-  
-  #logo {
-	font-weight: bold;
-	font-size: 20px;
-	color: #000;
-	align-self: center;
-  }
-  
-  #menu ul {
-	display: flex;
-	align-items: center;
-	gap: 20px;
-	padding: 0;
-	margin: 0;
-  }
-  
-  #menu li {
-	display: inline;
-	list-style: none;
-  }
-  html {
-	scroll-behavior: smooth;
   }
   
