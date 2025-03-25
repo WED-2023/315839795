@@ -17,13 +17,14 @@ body {
 	top: 0;
 	width: 100%;
 	height: 50px;
-	background-color: #a7dff4;
+	background-color: rgba(0, 0, 0, 0.7); /* dark translucent */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 0 30px;
 	z-index: 1000;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(4px); /* optional blur */
+	box-shadow: 0 2px 5px rgba(255, 100, 0, 0.2);
   }
   
   #logo img {
@@ -43,19 +44,17 @@ body {
   }
   
   #menu a {
-	text-decoration: none;
-	font-weight: bold;
-	color: #000;
+	color: #fff;
   }
   
   #menu a:hover {
-	color: #004e78;
+	color: #ffaa00;
   }
   
   /* Page sections */
   .section {
 	background-color: rgba(0, 0, 0, 0.6);
-	padding: 80px 20px 60px 20px;
+	padding: 40px 20px 60px 20px;  /* ⬅ reduced top padding from 80px to 40px */
 	max-width: 800px;
 	margin: 40px auto;
 	border-radius: 12px;
