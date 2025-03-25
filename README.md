@@ -1,6 +1,6 @@
 # Personal Website – Robert Oppenheimer
 
-This website is an assignment project for a web-development university course.
+This website is an assignment for a web-development university course.
 The site is dedicated to J. Robert Oppenheimer — American theoretical physicist and director of the Manhattan Project.
 
 ## Website Sections
