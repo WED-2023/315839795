@@ -54,9 +54,9 @@ body {
   /* Page sections */
   .section {
 	background-color: rgba(0, 0, 0, 0.6);
-	padding: 40px 20px 60px 20px;  /* ⬅ reduced top padding from 80px to 40px */
+	padding: 20px 20px 40px 20px;  /* ⬅ even tighter */
 	max-width: 800px;
-	margin: 40px auto;
+	margin: 20px auto;             /* ⬅ smaller vertical gap between sections */
 	border-radius: 12px;
 	border-bottom: 2px solid #ffaa00;
   }
