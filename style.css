@@ -1,7 +1,100 @@
-#menu
-{
+/* Top navigation menu */
+#menu {
 	position: fixed;
+	top: 0;
 	width: 100%;
-	height: 35px;
-	background: white;
-}
+	height: 50px;
+	background-color: #a7dff4; /* light blue */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  #menu li {
+	display: inline;
+	margin: 0 15px;
+	list-style-type: none;
+  }
+  
+  #menu a {
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
+	font-family: Arial, sans-serif;
+  }
+  
+  #menu a:hover {
+	color: #0077b6;
+  }
+  
+  /* General section style */
+  .section {
+	padding: 100px 20px 60px 20px;
+	font-family: 'Segoe UI', sans-serif;
+	max-width: 800px;
+	margin: auto;
+	border-bottom: 2px solid #00aaff;
+  }
+  
+  .section h2 {
+	border-bottom: 4px solid #00aaff;
+	display: inline-block;
+	padding-bottom: 5px;
+	margin-bottom: 20px;
+	font-size: 28px;
+	color: #222;
+  }
+  
+  /* Form inputs */
+  form input, form textarea, form select {
+	width: 100%;
+	padding: 10px;
+	margin-top: 5px;
+	margin-bottom: 15px;
+	border-radius: 6px;
+	border: 1px solid #ccc;
+	font-size: 16px;
+  }
+  
+  form input[type="submit"] {
+	background-color: #00aaff;
+	color: white;
+	border: none;
+	cursor: pointer;
+	transition: 0.3s;
+  }
+  
+  form input[type="submit"]:hover {
+	background-color: #0077b6;
+  }
+  #menu {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 30px;
+  }
+  
+  #logo {
+	font-weight: bold;
+	font-size: 20px;
+	color: #000;
+	align-self: center;
+  }
+  
+  #menu ul {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	padding: 0;
+	margin: 0;
+  }
+  
+  #menu li {
+	display: inline;
+	list-style: none;
+  }
+  html {
+	scroll-behavior: smooth;
+  }
+  
