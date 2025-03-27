@@ -17,17 +17,18 @@ body {
 	height: 50px;
 	background-color: rgba(0, 0, 0, 0.7);
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	padding: 0 20px;
+	padding: 0 60px; /* ⬅ wider left/right padding */
 	z-index: 1000;
 	box-shadow: 0 2px 5px rgba(255, 100, 0, 0.2);
 	backdrop-filter: blur(6px);
   }
-  
   #logo {
 	flex-shrink: 0;
-	margin-right: 20px;
+	margin-right: 40px;
   }
+  
   
   #logo img {
 	height: 40px;
@@ -36,12 +37,10 @@ body {
   
   #menu ul {
 	display: flex;
-	flex: 1;
-	gap: 14px;
-	justify-content: flex-end;
+	gap: 20px;
 	list-style: none;
-	padding: 0 10px;
 	margin: 0;
+	padding: 0;
   }
   
   #menu a {
