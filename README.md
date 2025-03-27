@@ -13,9 +13,8 @@ The site is dedicated to J. Robert Oppenheimer — American theoretical physicis
 - **Q&A**: Comparison between Web 1.0, 2.0, and 3.0.
 - **Contact Me**: Email form with mood selector.
 
-## Student Info
+## My Info
 
 - **Name**: Tomer Rothman
 - **ID**: 315839795
 - **GitHub Pages Link**: [https://wed-2023.github.io/315839795/](https://wed-2023.github.io/315839795/)
-- **Contact Email**: rothtom@post.bgu.ac.il
